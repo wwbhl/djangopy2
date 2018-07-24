@@ -25,7 +25,7 @@ SECRET_KEY = 'dcto#44mb6wj=j$4d!=-6evgtp%#z_4n25jj+o(te4-&m$4&=g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
