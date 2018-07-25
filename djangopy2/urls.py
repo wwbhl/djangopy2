@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from . import view
-
+from . import view,testdb,search,search2
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', view.hello)
+    url(r'^$', view.hello),
+    url(r'^testdb$',testdb.testdb),
+    url(r'^search-form$',search.search_from),
+    url(r'^search$',search.search),
+    url(r'^search-post$', search2.search_post),
 ]
